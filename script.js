@@ -20,6 +20,7 @@ function game () {
     if (playerEntry===null) {
         console.log ('No entry detected!')
     }
+    //What happens if cancel button is not pressed
     else {
     const computerSelection = computerPlay();
     const playerSelection = playerEntry.toLowerCase();
@@ -27,6 +28,7 @@ function game () {
     console.log ('Computer selection is ' + computerSelection);
     console.log ('Player selected ' + playerSelection);
 
+    //Switch case to evaluate results after player enters
     switch (true) {
 
         case (playerSelection===computerSelection):
@@ -62,6 +64,7 @@ function game () {
     }
 }
 
+//Play game five times
 for(i=0; i<5; i++) {
     game();
 }
